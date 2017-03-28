@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Random Quote Generator Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Catamaran" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/gen.js"></script>
+    
+    <!-- Twitter API script-->
+    <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+    
+    </head>
+<body>
+    <header class="header">
+  <h1>Random Quote Generator</h1>
+  
+</header>
+<div class="main">
+  <div class="window" id="message">
+    <p>Hit "quote" and see what comes up.</p>
+</div>
+  <div class="button-row">
+  <button class="primary" id="quote">Quote</button>
+      <button class="primary" id="twitter"><a href="https://twitter.com/intent/tweet" id="tweet">Tweet</a></button>
+  </div>
+</div>
+    </body>
+</html>
